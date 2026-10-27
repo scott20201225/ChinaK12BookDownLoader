@@ -12,6 +12,25 @@
 
 ---
 
+## 📥 客户端最新下载地址 (Download)
+
+> 💡 **开箱即用，无需配置任何 Node.js 运行环境**。请根据您的操作系统与硬件芯片架构点击下方直接下载：  
+> 🔗 **全平台版本官方发布页**：👉 [**GitHub Releases 最新版本直达 (v1.1.0)**](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/latest)
+
+| 操作系统 (OS) | 适用设备 / 芯片架构 | 推荐安装包（点击直接下载） | 便携免安装版 / 其他格式 |
+| :--- | :--- | :--- | :--- |
+| **Windows** | 常见 64 位电脑（Intel / AMD） | 🚀 [**Windows x64 安装包 (.exe)**](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/download/v1.1.0/chinak12-downloader-win-x64-1.1.0-setup.exe) | [x64 免安装便携版 (.zip)](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/download/v1.1.0/chinak12-downloader-win-x64-1.1.0.zip) |
+| **Windows** | 骁龙 / ARM 芯片（Surface / Copilot+ PC） | 🚀 [**Windows ARM64 安装包 (.exe)**](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/download/v1.1.0/chinak12-downloader-win-arm64-1.1.0-setup.exe) | [ARM64 免安装便携版 (.zip)](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/download/v1.1.0/chinak12-downloader-win-arm64-1.1.0.zip) |
+| **macOS** | Apple Silicon（M1 / M2 / M3 / M4 系列） | 🚀 [**macOS ARM64 安装镜像 (.dmg)**](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/download/v1.1.0/chinak12-downloader-mac-arm64-1.1.0.dmg) | [arm64 便携版 (.zip)](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/download/v1.1.0/chinak12-downloader-mac-arm64-1.1.0.zip) |
+| **macOS** | Intel 处理器机型（旧款 Mac） | 🚀 [**macOS x64 安装镜像 (.dmg)**](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/download/v1.1.0/chinak12-downloader-mac-x64-1.1.0.dmg) | [x64 便携版 (.zip)](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/download/v1.1.0/chinak12-downloader-mac-x64-1.1.0.zip) |
+| **Linux** | 常见 64 位 PC（Ubuntu / Debian / Arch 等） | 🚀 [**Linux x86_64 通用版 (.AppImage)**](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/download/v1.1.0/chinak12-downloader-linux-x86_64-1.1.0.AppImage) | [Debian/Ubuntu (.deb)](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/download/v1.1.0/chinak12-downloader-linux-amd64-1.1.0.deb) / [绿色包 (.tar.gz)](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/download/v1.1.0/chinak12-downloader-linux-x64-1.1.0.tar.gz) |
+| **Linux** | 统信 UOS / 银河麒麟 / 树莓派 ARM64 | 🚀 [**Linux ARM64 通用版 (.AppImage)**](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/download/v1.1.0/chinak12-downloader-linux-arm64-1.1.0.AppImage) | [Debian/麒麟 (.deb)](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/download/v1.1.0/chinak12-downloader-linux-arm64-1.1.0.deb) / [绿色包 (.tar.gz)](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/download/v1.1.0/chinak12-downloader-linux-arm64-1.1.0.tar.gz) |
+
+> 📌 **完整性校验**：所有安装包的 SHA-256 校验和清单请参见 [SHA256SUMS.txt](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/download/v1.1.0/SHA256SUMS.txt)。  
+> ⚠️ **首次运行安全提示**：由于未购买商业开发者证书，macOS 提示“已损坏/无法打开”或 Windows 提示“SmartScreen”请参考下方 [安装与运行说明](#-安装与运行说明) 快速放行。
+
+---
+
 ## 📷 界面预览与功能展示
 
 | 教材主界面与多维级联筛选 | 实时下载管理器抽屉（限并发/速率/状态管理） |
@@ -58,15 +77,42 @@ node server.js 8080
 
 ---
 
-### 方式二：桌面客户端安装包（开箱即用）
+### 方式二：桌面客户端安装包（开箱即用，推荐）
 
-进入 [Releases](https://github.com/scott20201225/ChinaK12BookDownLoader/releases) 页面直接下载对应系统的安装包：
+可直接前往顶部 [**📥 客户端最新下载地址**](#-客户端最新下载地址-download) 点击对应系统直链下载，或访问 [GitHub Releases 最新发版列表](https://github.com/scott20201225/ChinaK12BookDownLoader/releases/latest)。
 
-| 操作系统 | 架构 | 安装包格式 |
-| :--- | :--- | :--- |
-| **macOS** | Apple Silicon (`arm64`) / Intel (`x64`) | `.dmg`、`.zip` |
-| **Windows** | 64位 (`x64`) / 骁龙 ARM64 (`arm64`) | 安装包 (`-setup.exe`)、便携版 (`.zip`) |
-| **Linux** | 64位 (`x64`) / 统信·麒麟·ARM64 (`arm64`) | `.AppImage`、`.deb`、`.tar.gz` |
+#### 🍎 macOS 安装与运行说明
+因为个人开源项目未购买商业 Apple 开发者数字签名，若 macOS 系统提示“已损坏”或“无法打开”，请参照以下方法放行：
+- 打开【系统设置】→【隐私与安全性】→【安全性】，查看是否允许“任何来源”；若无此选项，打开终端输入：
+  ```bash
+  sudo spctl --master-disable
+  ```
+  回车并输入开机密码。
+- 若打开应用仍提示已损坏，在终端执行：
+  ```bash
+  sudo xattr -r -d com.apple.quarantine /Applications/ChinaK12BookDownLoader.app
+  ```
+  *(若应用放在其他路径，可输入 `sudo xattr -r -d com.apple.quarantine ` 后留一个空格，将应用图标拖入终端回车即可)*。
+
+#### 🪟 Windows 安装与运行说明
+- 若启动安装包时弹出 Windows Defender SmartScreen 提示“Windows 已保护你的电脑”：
+  1. 点击提示框内的 **“更多信息”**；
+  2. 点击右下角出现的 **“仍要运行”** 即可正常安装与启动。
+- 提供两种格式：
+  - `*-setup.exe`：标准安装向导，可自定义安装路径并自动创建桌面快捷方式。
+  - `*.zip`：免安装便携版，解压后双击 `ChinaK12BookDownLoader.exe` 即可直接运行。
+
+#### 🐧 Linux 安装与运行说明
+- **AppImage 格式（推荐，全发行版通用）**：
+  ```bash
+  chmod +x chinak12-downloader-linux-*.AppImage
+  ./chinak12-downloader-linux-*.AppImage
+  ```
+  *(若系统缺少 FUSE，可附加 `--appimage-extract-and-run` 参数或安装 `libfuse2`)*。
+- **Debian / Ubuntu 系列（`.deb`）**：
+  ```bash
+  sudo dpkg -i chinak12-downloader-linux-*.deb
+  ```
 
 ---
 
