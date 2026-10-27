@@ -159,6 +159,20 @@ jobs:
           path: dist
           merge-multiple: true
 
+      - name: Create unversioned latest aliases
+        working-directory: dist
+        run: |
+          # 为所有带版本号的安装包创建不带版本号的通用别名副本，供 README 动态下载直链使用
+          for f in chinak12-downloader-*; do
+            if [ -f "$f" ]; then
+              alias_name=$(echo "$f" | sed -E 's/-[0-9]+\.[0-9]+\.[0-9]+//')
+              if [ "$alias_name" != "$f" ]; then
+                cp "$f" "$alias_name"
+                echo "Created latest alias: $alias_name -> $f"
+              fi
+            fi
+          done
+
       - name: Generate SHA256SUMS.txt
         working-directory: dist
         run: |
